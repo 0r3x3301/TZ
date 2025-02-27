@@ -7,7 +7,7 @@ public class EndGameTrigger : MonoBehaviour
         Player player;
         if (other.TryGetComponent(out player))
         {
-            GameManger.Instance.Win();
+            GameManager.Instance.Win();
         }
     }
 }

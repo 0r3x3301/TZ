@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "D:\\Unity\\Projects\\TZ\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{63EDC9BE-E7A1-AFC3-19CE-79D4D17D01CD}|Assembly-CSharp.csproj|d:\\unity\\projects\\tz\\assets\\scripts\\entities\\playerinputcontroller\\playerinputcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63EDC9BE-E7A1-AFC3-19CE-79D4D17D01CD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\playerinputcontroller\\playerinputcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{63EDC9BE-E7A1-AFC3-19CE-79D4D17D01CD}|Assembly-CSharp.csproj|d:\\unity\\projects\\tz\\assets\\scripts\\entities\\soundscntroller\\soundscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63EDC9BE-E7A1-AFC3-19CE-79D4D17D01CD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\soundscntroller\\soundscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63EDC9BE-E7A1-AFC3-19CE-79D4D17D01CD}|Assembly-CSharp.csproj|d:\\unity\\projects\\tz\\assets\\scripts\\entities\\playerinputcontroller\\sidemovinghandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63EDC9BE-E7A1-AFC3-19CE-79D4D17D01CD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\playerinputcontroller\\sidemovinghandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{63EDC9BE-E7A1-AFC3-19CE-79D4D17D01CD}|Assembly-CSharp.csproj|d:\\unity\\projects\\tz\\assets\\scripts\\entities\\player\\rating\\ratingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63EDC9BE-E7A1-AFC3-19CE-79D4D17D01CD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\player\\rating\\ratingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63EDC9BE-E7A1-AFC3-19CE-79D4D17D01CD}|Assembly-CSharp.csproj|d:\\unity\\projects\\tz\\assets\\scripts\\entities\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{63EDC9BE-E7A1-AFC3-19CE-79D4D17D01CD}|Assembly-CSharp.csproj|D:\\Unity\\Projects\\TZ\\assets\\scripts\\entities\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{63EDC9BE-E7A1-AFC3-19CE-79D4D17D01CD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63EDC9BE-E7A1-AFC3-19CE-79D4D17D01CD}|Assembly-CSharp.csproj|d:\\unity\\projects\\tz\\assets\\scripts\\entities\\gamemanager\\gamemanger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63EDC9BE-E7A1-AFC3-19CE-79D4D17D01CD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\gamemanager\\gamemanger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{63EDC9BE-E7A1-AFC3-19CE-79D4D17D01CD}|Assembly-CSharp.csproj|D:\\Unity\\Projects\\TZ\\assets\\scripts\\entities\\ratingitem\\goodratingitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63EDC9BE-E7A1-AFC3-19CE-79D4D17D01CD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\ratingitem\\goodratingitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63EDC9BE-E7A1-AFC3-19CE-79D4D17D01CD}|Assembly-CSharp.csproj|D:\\Unity\\Projects\\TZ\\assets\\scripts\\entities\\ratingitem\\badratingitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63EDC9BE-E7A1-AFC3-19CE-79D4D17D01CD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\ratingitem\\badratingitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63EDC9BE-E7A1-AFC3-19CE-79D4D17D01CD}|Assembly-CSharp.csproj|D:\\Unity\\Projects\\TZ\\assets\\scripts\\entities\\ratingitem\\ratingitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63EDC9BE-E7A1-AFC3-19CE-79D4D17D01CD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\ratingitem\\ratingitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,27 +39,63 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PlayerInputController.cs",
-              "DocumentMoniker": "D:\\Unity\\Projects\\TZ\\Assets\\Scripts\\Entities\\PlayerInputController\\PlayerInputController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Entities\\PlayerInputController\\PlayerInputController.cs",
-              "ToolTip": "D:\\Unity\\Projects\\TZ\\Assets\\Scripts\\Entities\\PlayerInputController\\PlayerInputController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Entities\\PlayerInputController\\PlayerInputController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBUAAAAiAAAAAAAAAA==",
+              "Title": "SoundsController.cs",
+              "DocumentMoniker": "D:\\Unity\\Projects\\TZ\\Assets\\Scripts\\Entities\\SoundsCntroller\\SoundsController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Entities\\SoundsCntroller\\SoundsController.cs",
+              "ToolTip": "D:\\Unity\\Projects\\TZ\\Assets\\Scripts\\Entities\\SoundsCntroller\\SoundsController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Entities\\SoundsCntroller\\SoundsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T01:32:54.952Z",
+              "WhenOpened": "2025-02-27T05:17:14.703Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SideMovingHandler.cs",
-              "DocumentMoniker": "D:\\Unity\\Projects\\TZ\\Assets\\Scripts\\Entities\\PlayerInputController\\SideMovingHandler.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Entities\\PlayerInputController\\SideMovingHandler.cs",
-              "ToolTip": "D:\\Unity\\Projects\\TZ\\Assets\\Scripts\\Entities\\PlayerInputController\\SideMovingHandler.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Entities\\PlayerInputController\\SideMovingHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "GoodRatingItem.cs",
+              "DocumentMoniker": "D:\\Unity\\Projects\\TZ\\Assets\\Scripts\\Entities\\RatingItem\\GoodRatingItem.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Entities\\RatingItem\\GoodRatingItem.cs",
+              "ToolTip": "D:\\Unity\\Projects\\TZ\\Assets\\Scripts\\Entities\\RatingItem\\GoodRatingItem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Entities\\RatingItem\\GoodRatingItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T01:32:53.673Z",
+              "WhenOpened": "2025-02-26T12:56:06.394Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BadRatingItem.cs",
+              "DocumentMoniker": "D:\\Unity\\Projects\\TZ\\Assets\\Scripts\\Entities\\RatingItem\\BadRatingItem.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Entities\\RatingItem\\BadRatingItem.cs",
+              "ToolTip": "D:\\Unity\\Projects\\TZ\\Assets\\Scripts\\Entities\\RatingItem\\BadRatingItem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Entities\\RatingItem\\BadRatingItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T12:56:00.214Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RatingItem.cs",
+              "DocumentMoniker": "D:\\Unity\\Projects\\TZ\\Assets\\Scripts\\Entities\\RatingItem\\RatingItem.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Entities\\RatingItem\\RatingItem.cs",
+              "ToolTip": "D:\\Unity\\Projects\\TZ\\Assets\\Scripts\\Entities\\RatingItem\\RatingItem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Entities\\RatingItem\\RatingItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T12:55:31.302Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RatingManager.cs",
+              "DocumentMoniker": "D:\\Unity\\Projects\\TZ\\Assets\\Scripts\\Entities\\Player\\Rating\\RatingManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Entities\\Player\\Rating\\RatingManager.cs",
+              "ToolTip": "D:\\Unity\\Projects\\TZ\\Assets\\Scripts\\Entities\\Player\\Rating\\RatingManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Entities\\Player\\Rating\\RatingManager.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T02:28:23.223Z",
               "EditorCaption": ""
             },
             {
@@ -62,23 +106,9 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Entities\\Player\\Player.cs",
               "ToolTip": "D:\\Unity\\Projects\\TZ\\Assets\\Scripts\\Entities\\Player\\Player.cs",
               "RelativeToolTip": "Assets\\Scripts\\Entities\\Player\\Player.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAQwB4AAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAUwGYAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T01:30:07.284Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GameManger.cs",
-              "DocumentMoniker": "D:\\Unity\\Projects\\TZ\\Assets\\Scripts\\Entities\\GameManager\\GameManger.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Entities\\GameManager\\GameManger.cs",
-              "ToolTip": "D:\\Unity\\Projects\\TZ\\Assets\\Scripts\\Entities\\GameManager\\GameManger.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Entities\\GameManager\\GameManger.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwB0AAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T01:29:18.625Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-23T01:30:07.284Z"
             }
           ]
         }

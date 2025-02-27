@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3558e2a134db1c34eba6b74bb5f84415, type: 3}
   m_Name: Middle
   m_EditorClassIdentifier: 
-  <BarColor>k__BackingField: {r: 1, g: 0.7170844, b: 0, a: 0}
+  <BarColor>k__BackingField: {r: 1, g: 0.9013662, b: 0, a: 1}
   <ModelName>k__BackingField: 
   <WalkAnimationName>k__BackingField: 
   <SkinType>k__BackingField: 2

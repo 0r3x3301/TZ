@@ -100,13 +100,13 @@ public class Player : MonoBehaviour, IMoving, IRotating, IHaveRating
     public void IncreaseRating(int value)
     {
         _currentRating += value;
-        _ratingManager.RatingIncreased();
+        _ratingManager.RatingIncreased(value);
     }
 
     public void DecreaseRating(int value)
     {
         _currentRating -= value;
-        _ratingManager.RatingDecreased();
+        _ratingManager.RatingDecreased(value);
     }
 
     public void OnWin()

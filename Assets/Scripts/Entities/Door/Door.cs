@@ -19,7 +19,7 @@ public class Door : MonoBehaviour
             }
             else
             {
-                GameManger.Instance.Win();
+                GameManager.Instance.Win();
             }
         }
     }

@@ -1,5 +1,4 @@
 using System.Linq;
-using System.Runtime.CompilerServices;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -15,6 +14,7 @@ public class RatingManager : MonoBehaviour
     [SerializeField] private AudioSource _audioSource;
     [SerializeField] private AudioClip _goodItemAudio;
     [SerializeField] private AudioClip _badItemAudio;
+    [SerializeField] private MoneyEffect _moneyEffect;
 
     private RatingState _currentRatingState;
     private IHaveRating _player;
@@ -24,8 +24,9 @@ public class RatingManager : MonoBehaviour
         _player = GetComponent<IHaveRating>();
     }
 
-    public void RatingDecreased()
+    public void RatingDecreased(int value)
     {
+        _moneyEffect.DecreaseMoney(value);
         _audioSource.clip = _badItemAudio;
         _audioSource.Play();
         UpdateBar();
@@ -35,16 +36,17 @@ public class RatingManager : MonoBehaviour
         }
         else
         {
-            GameManger.Instance.Lose();
+            GameManager.Instance.Lose();
         }
     }
 
-    public void RatingIncreased()
+    public void RatingIncreased(int value)
     {
+        _moneyEffect.IncreaseMoney(value);
         _audioSource.clip = _goodItemAudio;
         _audioSource.Play();
-        UpdateInfo();
         UpdateBar();
+        UpdateInfo();
     }
 
     public void UpdateBar()
@@ -67,6 +69,8 @@ public class RatingManager : MonoBehaviour
     {
         _currentRatingState = rating;
         _stateName.text = rating.Name;
+        _stateName.color = rating.Config.BarColor;
+        _bar.color = rating.Config.BarColor;
         _skinManager.SetSkin(rating.Config.SkinType);
     }
 }
