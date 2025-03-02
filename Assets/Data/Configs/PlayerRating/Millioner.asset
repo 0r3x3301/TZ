@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3558e2a134db1c34eba6b74bb5f84415, type: 3}
   m_Name: Millioner
   m_EditorClassIdentifier: 
-  <BarColor>k__BackingField: {r: 0, g: 1, b: 0.81646943, a: 1}
-  <ModelName>k__BackingField: 
-  <WalkAnimationName>k__BackingField: 
-  <SkinType>k__BackingField: 4
+  <Name>k__BackingField: "\u041C\u0438\u043B\u043B\u0438\u043E\u043D\u0435\u0440"
+  <Color>k__BackingField: {r: 0, g: 1, b: 0.95059705, a: 1}
+  <WalkAnimation>k__BackingField: {fileID: -203655887218126122, guid: fb8844aa4ea75724282d6686222ab2de, type: 3}

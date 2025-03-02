@@ -1,34 +1,42 @@
 using System.Linq;
-using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class RatingManager : MonoBehaviour 
 {
     [SerializeField] private int _maxRating = 140;
     [SerializeField] private RatingList _ratingList;
-    [SerializeField] private Image _bar;
-    [SerializeField] private TMP_Text _stateName;
-    [SerializeField] private TMP_Text _ratingText;
-    [SerializeField] private SkinManager _skinManager;
-    [SerializeField] private AudioSource _audioSource;
     [SerializeField] private AudioClip _goodItemAudio;
     [SerializeField] private AudioClip _badItemAudio;
-    [SerializeField] private MoneyEffect _moneyEffect;
+    [SerializeField] private SkinSelector _skinSelector;
+    [SerializeField] private RatingEffectController _ratingEffectController;
+    [SerializeField] private ProgressVisualizer _progressVisualizer;
+    [SerializeField] private Player Player;
+    [SerializeField] private PlayerAnimationController _playerAnimationController;
+    [SerializeField] private RotaterAround _playerRotater;
 
     private RatingState _currentRatingState;
     private IHaveRating _player;
 
-    public void Init()
+    private void Awake()
     {
-        _player = GetComponent<IHaveRating>();
+        Init(Player);
+    }
+
+    public void Init(IHaveRating player)
+    {
+        _player = player;
+        _currentRatingState = _ratingList.Ratings.OrderBy(x => x.NeedRating).ToList()[1];
+        _progressVisualizer.UpdateInfo(_currentRatingState.Config.Color, _currentRatingState.Config.Name);
     }
 
     public void RatingDecreased(int value)
     {
-        _moneyEffect.DecreaseMoney(value);
-        _audioSource.clip = _badItemAudio;
-        _audioSource.Play();
+        if (value > 0)
+        {
+            _ratingEffectController.DecreaseMoney(value);
+            SoundManager.GetInstance().Play(_badItemAudio);
+        }
+        
         UpdateBar();
         if (_player.Rating > 0)
         {
@@ -42,35 +50,54 @@ public class RatingManager : MonoBehaviour
 
     public void RatingIncreased(int value)
     {
-        _moneyEffect.IncreaseMoney(value);
-        _audioSource.clip = _goodItemAudio;
-        _audioSource.Play();
+        if (value > 0)
+        {
+            _ratingEffectController.IncreaseMoney(value);
+            SoundManager.GetInstance().Play(_goodItemAudio);
+        }
+        
         UpdateBar();
-        UpdateInfo();
-    }
-
-    public void UpdateBar()
-    {
-        _bar.fillAmount = (float)_player.Rating / (float)_maxRating;
+        if (value > 0) UpdateInfo();
     }
 
     public void UpdateInfo()
     {
-        _ratingText.text = _player.Rating.ToString();
-        var avaibleRating = _ratingList.Ratings.Where(x => x.NeedRating < _player.Rating)?.OrderBy(x => x.NeedRating)?.Last();
-
+        _progressVisualizer.UpdateRatingCount(_player.Rating);
+        var ratings = _ratingList.Ratings.Where(x => x.NeedRating <= _player.Rating)?.OrderBy(x => x.NeedRating);
+        var avaibleRating = ratings.Last();
         if (avaibleRating != _currentRatingState)
         {
-            UpdateRatingTo(avaibleRating);
+            if (_currentRatingState.NeedRating < avaibleRating.NeedRating)
+            {
+                _progressVisualizer.OnNewStage(avaibleRating.Config);
+                _playerAnimationController.OnNewStage(avaibleRating.Config);
+                _playerRotater.StartRotate();
+            }
+            else
+            {
+                _playerAnimationController.Hit();
+            }
+            _progressVisualizer.UpdateInfo(avaibleRating.Config.Color, avaibleRating.Config.Name);
+            _skinSelector.SetSkin(avaibleRating.Config);
+            _currentRatingState = avaibleRating;
         }
     }
 
-    public void UpdateRatingTo(RatingState rating)
+    public void UpdateBar()
     {
-        _currentRatingState = rating;
-        _stateName.text = rating.Name;
-        _stateName.color = rating.Config.BarColor;
-        _bar.color = rating.Config.BarColor;
-        _skinManager.SetSkin(rating.Config.SkinType);
+        _progressVisualizer.UpdateBarFillAmount((float)_player.Rating / (float)_maxRating);
+        _playerAnimationController.OnRatingChanged(_player.Rating);
+    }
+
+    private void OnEnable()
+    {
+        _player.RatingIncreased += RatingIncreased;
+        _player.RatingDecreased += RatingDecreased;
+    }
+    
+    private void OnDisable()
+    {
+        _player.RatingIncreased -= RatingIncreased;
+        _player.RatingDecreased -= RatingDecreased;
     }
 }

@@ -20,7 +20,8 @@ public class GameManager : MonoBehaviour
         _audioSource.clip = _winAudio;
         _audioSource.Play();
         _player.OnWin();
-        _uiManager.ShowWinMenu(_player.Rating * ((int)_player.GetComponent<SkinManager>().CurrentSkin + 1));
+        var koef = _player.Rating >= 140 ? 5 : _player.Rating >= 100 ? 4 : _player.Rating >= 70 ? 3 : _player.Rating >= 35 ? 2 : 1;
+        _uiManager.ShowWinMenu(_player.Rating * koef);
     }
 
     public void Lose()

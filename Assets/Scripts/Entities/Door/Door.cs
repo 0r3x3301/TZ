@@ -2,18 +2,18 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    [SerializeField] private RatingConfig.Skin _needSkin;
+    [SerializeField] private int _needRating;
     [SerializeField] private Animator _animator;
     [SerializeField] private string _animationName;
     [SerializeField] private AudioSource _audioSource;
 
     private void OnTriggerEnter(Collider other)
     {
-        SkinManager playerSkinManager;
+        IHaveRating player;
         
-        if (other.TryGetComponent(out playerSkinManager))
+        if (other.TryGetComponent(out player))
         {
-            if (playerSkinManager.CurrentSkin >= _needSkin)
+            if (player.Rating >= _needRating)
             {
                 OpenDoor();
             }

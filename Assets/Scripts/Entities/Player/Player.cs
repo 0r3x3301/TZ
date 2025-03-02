@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+using System.Collections;
+using UnityEngine;
 [SelectionBase]
 public class Player : MonoBehaviour, IMoving, IRotating, IHaveRating
 {
@@ -7,15 +9,16 @@ public class Player : MonoBehaviour, IMoving, IRotating, IHaveRating
     [SerializeField] private float _movingSpeed = 2f;
     [SerializeField] private float _rotatingSpeed = 2f;
     [SerializeField] private int _startRating = 51;
-    [SerializeField] private RatingManager _ratingManager;
-    [SerializeField] private AnimationController _animationController;
+    [SerializeField] private PlayerAnimationController _animationController;
+    [SerializeField] private AudioClip _moveAudio;
     #endregion
 
     #region Flags
     private bool _canMoving = false;
     private bool _isMooving = false;
+    private bool _timerStarted = false;
     #endregion
-
+    
     #region Handlers
     private IRotatingHandler _rotatingHandler;
     private IMovingHandler _movingHandler;
@@ -23,6 +26,11 @@ public class Player : MonoBehaviour, IMoving, IRotating, IHaveRating
 
     private Quaternion _needRotation = Quaternion.Euler(Vector3.zero);
     private int _currentRating = 0;
+
+    #region Events
+    public event Action<int> RatingIncreased;
+    public event Action<int> RatingDecreased;
+    #endregion
 
     #region Consts
     private readonly Quaternion _zeroRotation = Quaternion.Euler(Vector3.zero);
@@ -46,14 +54,10 @@ public class Player : MonoBehaviour, IMoving, IRotating, IHaveRating
     public void Init()
     {
         _transform = GetComponent<Transform>();
-        _ratingManager = GetComponent<RatingManager>();
-        _ratingManager.Init();
 
         _movingHandler = new ForwardMovingHandler(this);
         _rotatingHandler = new RotatingHaldler(this);
         _currentRating = _startRating;
-        _ratingManager.UpdateInfo();
-        _animationController.PlayIdle();
     }
 
     private void Update()
@@ -74,7 +78,7 @@ public class Player : MonoBehaviour, IMoving, IRotating, IHaveRating
         _isMooving = true;
         _canMoving = true;
         _animationController.PlayWalking();
-        _ratingManager.UpdateBar();
+        IncreaseRating(0);
     }
 
     public void Move()
@@ -82,7 +86,16 @@ public class Player : MonoBehaviour, IMoving, IRotating, IHaveRating
         if (_canMoving)
         {
             _movingHandler.Move(_transform.InverseTransformDirection(_transform.forward));
+            if (!_timerStarted) StartCoroutine(PlayWalkSound(1f));
         }
+    }
+
+    private IEnumerator PlayWalkSound(float seconds)
+    {
+        _timerStarted = true;
+        yield return new WaitForSeconds(seconds);
+        SoundManager.GetInstance().Play(_moveAudio, UnityEngine.Random.Range(0.5f, 1f));
+        _timerStarted = false;
     }
 
     private void RotateTo(Quaternion rotation)
@@ -100,17 +113,18 @@ public class Player : MonoBehaviour, IMoving, IRotating, IHaveRating
     public void IncreaseRating(int value)
     {
         _currentRating += value;
-        _ratingManager.RatingIncreased(value);
+        RatingIncreased?.Invoke(value);
     }
 
     public void DecreaseRating(int value)
     {
         _currentRating -= value;
-        _ratingManager.RatingDecreased(value);
+        RatingDecreased?.Invoke(value);
     }
 
     public void OnWin()
     {
+        SoundManager.GetInstance().StopPlay();
         _animationController.PlayWin();
         _isMooving = false;
         _canMoving = false;
@@ -119,6 +133,7 @@ public class Player : MonoBehaviour, IMoving, IRotating, IHaveRating
 
     public void OnLose()
     {
+        SoundManager.GetInstance().StopPlay();
         _animationController.PlayLose();
         _canMoving = false;
         _isMooving = false;
