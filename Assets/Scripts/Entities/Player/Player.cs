@@ -86,7 +86,7 @@ public class Player : MonoBehaviour, IMoving, IRotating, IHaveRating
         if (_canMoving)
         {
             _movingHandler.Move(_transform.InverseTransformDirection(_transform.forward));
-            if (!_timerStarted) StartCoroutine(PlayWalkSound(1f));
+            if (!_timerStarted) StartCoroutine(PlayWalkSound(0.6f));
         }
     }
 

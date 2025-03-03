@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RatingEffectController : MonoBehaviour
 {
@@ -7,6 +8,8 @@ public class RatingEffectController : MonoBehaviour
     [SerializeField] private TMP_Text _text;
     [SerializeField] private ParticleSystem _goodParticleSystem;
     [SerializeField] private ParticleSystem _badParticleSystem;
+    [SerializeField] private Animator _moneyEffectAnimator;
+    [SerializeField] private Image _moneyEffectImage;
 
     private int _currentMoney = 0;
     private bool _isIncreased;
@@ -24,7 +27,7 @@ public class RatingEffectController : MonoBehaviour
             _currentMoney = value;
         }
         else _currentMoney += value;
-        _text.text = _currentMoney.ToString();
+        _text.text = "+ " + _currentMoney.ToString() + " $";
         _animator.SetTrigger("Increased");
         PlayPlayerEffect(true);
     }
@@ -38,7 +41,7 @@ public class RatingEffectController : MonoBehaviour
         }
         else _currentMoney += value;
 
-        _text.text = _currentMoney.ToString();
+        _text.text = "+ " + _currentMoney.ToString() + " $";
         _animator.SetTrigger("Decreased");
         PlayPlayerEffect(false);
     }
@@ -50,8 +53,17 @@ public class RatingEffectController : MonoBehaviour
 
     private void PlayPlayerEffect(bool isGood)
     {
-        if (isGood) _goodParticleSystem.Play();
-        else _badParticleSystem.Play();
+        if (isGood)
+        {
+            _goodParticleSystem.Play();
+            _moneyEffectImage.color = Color.green;
+        }
+        else
+        {
+            _badParticleSystem.Play();
+            _moneyEffectImage.color = Color.red;
+        }
+        _moneyEffectAnimator.SetTrigger("Play");
     }
 
 }

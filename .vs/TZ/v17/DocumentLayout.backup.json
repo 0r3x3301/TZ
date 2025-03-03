@@ -3,32 +3,12 @@
   "WorkspaceRootPath": "D:\\Unity\\Projects\\TZ\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{63EDC9BE-E7A1-AFC3-19CE-79D4D17D01CD}|Assembly-CSharp.csproj|d:\\unity\\projects\\tz\\assets\\scripts\\entities\\gamemanager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63EDC9BE-E7A1-AFC3-19CE-79D4D17D01CD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\gamemanager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{63EDC9BE-E7A1-AFC3-19CE-79D4D17D01CD}|Assembly-CSharp.csproj|d:\\unity\\projects\\tz\\assets\\scripts\\entities\\moneyeffect\\ratingeffectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63EDC9BE-E7A1-AFC3-19CE-79D4D17D01CD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\moneyeffect\\ratingeffectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63EDC9BE-E7A1-AFC3-19CE-79D4D17D01CD}|Assembly-CSharp.csproj|d:\\unity\\projects\\tz\\assets\\scripts\\entities\\player\\playeranimationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63EDC9BE-E7A1-AFC3-19CE-79D4D17D01CD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\player\\playeranimationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63EDC9BE-E7A1-AFC3-19CE-79D4D17D01CD}|Assembly-CSharp.csproj|D:\\Unity\\Projects\\TZ\\assets\\scripts\\entities\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63EDC9BE-E7A1-AFC3-19CE-79D4D17D01CD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63EDC9BE-E7A1-AFC3-19CE-79D4D17D01CD}|Assembly-CSharp.csproj|d:\\unity\\projects\\tz\\assets\\scripts\\update\\soundmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63EDC9BE-E7A1-AFC3-19CE-79D4D17D01CD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\update\\soundmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63EDC9BE-E7A1-AFC3-19CE-79D4D17D01CD}|Assembly-CSharp.csproj|d:\\unity\\projects\\tz\\assets\\scripts\\entities\\player\\rating\\ratingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63EDC9BE-E7A1-AFC3-19CE-79D4D17D01CD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\player\\rating\\ratingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63EDC9BE-E7A1-AFC3-19CE-79D4D17D01CD}|Assembly-CSharp.csproj|d:\\unity\\projects\\tz\\assets\\scripts\\entities\\door\\door.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63EDC9BE-E7A1-AFC3-19CE-79D4D17D01CD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\door\\door.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63EDC9BE-E7A1-AFC3-19CE-79D4D17D01CD}|Assembly-CSharp.csproj|d:\\unity\\projects\\tz\\assets\\scripts\\entities\\player\\skinselector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63EDC9BE-E7A1-AFC3-19CE-79D4D17D01CD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\player\\skinselector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{63EDC9BE-E7A1-AFC3-19CE-79D4D17D01CD}|Assembly-CSharp.csproj|d:\\unity\\projects\\tz\\assets\\scripts\\entities\\moneyeffect\\moneyeffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63EDC9BE-E7A1-AFC3-19CE-79D4D17D01CD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\moneyeffect\\moneyeffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,97 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SoundManager.cs",
-              "DocumentMoniker": "D:\\Unity\\Projects\\TZ\\Assets\\Scripts\\Update\\SoundManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Update\\SoundManager.cs",
-              "ToolTip": "D:\\Unity\\Projects\\TZ\\Assets\\Scripts\\Update\\SoundManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Update\\SoundManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T11:37:30.179Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "GameManager.cs",
-              "DocumentMoniker": "D:\\Unity\\Projects\\TZ\\Assets\\Scripts\\Entities\\GameManager\\GameManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Entities\\GameManager\\GameManager.cs",
-              "ToolTip": "D:\\Unity\\Projects\\TZ\\Assets\\Scripts\\Entities\\GameManager\\GameManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Entities\\GameManager\\GameManager.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBcAAAA2AAAAAAAAAA==",
+              "Title": "RatingEffectController.cs",
+              "DocumentMoniker": "D:\\Unity\\Projects\\TZ\\Assets\\Scripts\\Entities\\MoneyEffect\\RatingEffectController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Entities\\MoneyEffect\\RatingEffectController.cs",
+              "ToolTip": "D:\\Unity\\Projects\\TZ\\Assets\\Scripts\\Entities\\MoneyEffect\\RatingEffectController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Entities\\MoneyEffect\\RatingEffectController.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAwwEEAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T11:31:45.165Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Door.cs",
-              "DocumentMoniker": "D:\\Unity\\Projects\\TZ\\Assets\\Scripts\\Entities\\Door\\Door.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Entities\\Door\\Door.cs",
-              "ToolTip": "D:\\Unity\\Projects\\TZ\\Assets\\Scripts\\Entities\\Door\\Door.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Entities\\Door\\Door.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T11:16:55.286Z",
+              "WhenOpened": "2025-03-02T07:13:08.508Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PlayerAnimationController.cs",
-              "DocumentMoniker": "D:\\Unity\\Projects\\TZ\\Assets\\Scripts\\Entities\\Player\\PlayerAnimationController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Entities\\Player\\PlayerAnimationController.cs",
-              "ToolTip": "D:\\Unity\\Projects\\TZ\\Assets\\Scripts\\Entities\\Player\\PlayerAnimationController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Entities\\Player\\PlayerAnimationController.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAowBQAAAAlAAAAAAAAAA==",
+              "Title": "MoneyEffect.cs",
+              "DocumentMoniker": "D:\\Unity\\Projects\\TZ\\Assets\\Scripts\\Entities\\MoneyEffect\\MoneyEffect.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Entities\\MoneyEffect\\MoneyEffect.cs",
+              "ToolTip": "D:\\Unity\\Projects\\TZ\\Assets\\Scripts\\Entities\\MoneyEffect\\MoneyEffect.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Entities\\MoneyEffect\\MoneyEffect.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T11:14:41.543Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SkinSelector.cs",
-              "DocumentMoniker": "D:\\Unity\\Projects\\TZ\\Assets\\Scripts\\Entities\\Player\\SkinSelector.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Entities\\Player\\SkinSelector.cs",
-              "ToolTip": "D:\\Unity\\Projects\\TZ\\Assets\\Scripts\\Entities\\Player\\SkinSelector.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Entities\\Player\\SkinSelector.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T08:48:05.243Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RatingManager.cs",
-              "DocumentMoniker": "D:\\Unity\\Projects\\TZ\\Assets\\Scripts\\Entities\\Player\\Rating\\RatingManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Entities\\Player\\Rating\\RatingManager.cs",
-              "ToolTip": "D:\\Unity\\Projects\\TZ\\Assets\\Scripts\\Entities\\Player\\Rating\\RatingManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Entities\\Player\\Rating\\RatingManager.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBwAAABcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T08:21:54.808Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Player.cs",
-              "DocumentMoniker": "D:\\Unity\\Projects\\TZ\\Assets\\Scripts\\Entities\\Player\\Player.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Entities\\Player\\Player.cs",
-              "ToolTip": "D:\\Unity\\Projects\\TZ\\Assets\\Scripts\\Entities\\Player\\Player.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Entities\\Player\\Player.cs",
-              "ViewState": "AgIAAHYAAAAAAAAAAAAxwIgAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T04:48:17.207Z",
+              "WhenOpened": "2025-03-02T07:13:01.567Z",
               "EditorCaption": ""
             }
           ]
